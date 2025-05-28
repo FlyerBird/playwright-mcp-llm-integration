@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "description": "login to saucedemo",
+  "totalSteps": 5,
+  "completedSteps": 5,
+  "failedSteps": 0,
+  "duration": 23612,
+  "llmResponse": {
+    "model": "llama3.1:8b",
+    "reasoning": "Realizar login en la página de SauceDemo"
+  },
+  "executionResults": [
+    {
+      "step": 1,
+      "action": "navigate",
+      "success": true,
+      "result": "Navegado a: https://www.saucedemo.com",
+      "timestamp": "2025-05-28T13:24:27.056Z"
+    },
+    {
+      "step": 2,
+      "action": "fill",
+      "success": true,
+      "result": "Llenado 'standard_user' en: [data-test=\"username\"]",
+      "timestamp": "2025-05-28T13:24:30.101Z"
+    },
+    {
+      "step": 3,
+      "action": "fill",
+      "success": true,
+      "result": "Llenado 'secret_sauce' en: [data-test=\"password\"]",
+      "timestamp": "2025-05-28T13:24:33.122Z"
+    },
+    {
+      "step": 4,
+      "action": "click",
+      "success": true,
+      "result": "Click en: [data-test=\"login-button\"]",
+      "timestamp": "2025-05-28T13:24:36.222Z"
+    },
+    {
+      "step": 5,
+      "action": "verify",
+      "success": true,
+      "result": "Verificado visibilidad de: .inventory_list",
+      "timestamp": "2025-05-28T13:24:37.728Z"
+    }
+  ],
+  "timestamp": "2025-05-28T13:24:37.818Z"
+}

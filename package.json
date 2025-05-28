@@ -1,0 +1,48 @@
+{
+  "name": "playwright-mcp-llm-integration",
+  "version": "1.0.0",
+  "description": "POC for integrating Playwright MCP with LLM for automated testing",
+  "main": "src/llm-client.js",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/saucedemo.test.js",
+    "dev": "node src/llm-client.js",
+    "quick-test": "node tests/test-quick.js",
+    "cli": "node cli.js",
+    "start": "node cli.js",
+    "test-runner": "node -e \"import('./src/test-runner.js').then(m => console.log('Test Runner ready'))\""
+  },
+  "bin": {
+    "playwright-llm": "./cli.js"
+  },
+  "dependencies": {
+    "@playwright/mcp": "^0.0.26",
+    "axios": "^1.9.0",
+    "playwright": "^1.52.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0"
+  },
+  "keywords": [
+    "playwright",
+    "mcp",
+    "llm",
+    "testing",
+    "automation",
+    "ai",
+    "natural-language"
+  ],
+  "author": "Carlos Nieto",
+  "license": "MIT",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlyerBird/playwright-mcp-llm-integration.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FlyerBird/playwright-mcp-llm-integration/issues"
+  },
+  "homepage": "https://github.com/FlyerBird/playwright-mcp-llm-integration#readme"
+}

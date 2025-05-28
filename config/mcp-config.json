@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    }
+  },
+  "llm": {
+    "provider": "ollama",
+    "baseUrl": "http://localhost:11434",
+    "model": "llama3.1:8b"
+  },
+  "testing": {
+    "baseUrl": "https://www.saucedemo.com",
+    "headless": false,
+    "timeout": 30000
+  }
+}
